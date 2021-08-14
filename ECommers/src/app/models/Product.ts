@@ -1,10 +1,10 @@
 export interface Product{
-    productId:number;
-    categoryId:number;
-    brandId:number;
-    colorId:number;
-    productName:string;
-    stockQuantity:number;
-    productPrice:number;
+    product_id:number;
+    category_id:number;
+    color_id:number;
+    brand_id:number;
+    product_name:string;
+    product_price:number;
     description:string;
+    stock_quantity:number;
 } 
