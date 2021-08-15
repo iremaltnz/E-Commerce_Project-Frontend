@@ -11,15 +11,23 @@ import { CategoryListComponent } from './components/Category/category-list/categ
 import { BrandListComponent } from './components/Brand/brand-list/brand-list.component';
 import { ColorListComponent } from './components/Color/color-list/color-list.component';
 
+import { ProductDetailPageComponent } from './components/Product/product-detail-page/product-detail-page.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     ProductListComponent,
     NaviComponent,
     SidebarComponent,
+
     CategoryListComponent,
     BrandListComponent,
     ColorListComponent
+
+    ProductDetailPageComponent,
+ 
+
   ],
   imports: [
     BrowserModule,
