@@ -7,13 +7,19 @@ import { AppComponent } from './app.component';
 import { ProductListComponent } from './components/Product/product-list/product-list.component';
 import { NaviComponent } from './components/navi/navi.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { CategoryListComponent } from './components/Category/category-list/category-list.component';
+import { BrandListComponent } from './components/Brand/brand-list/brand-list.component';
+import { ColorListComponent } from './components/Color/color-list/color-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductListComponent,
     NaviComponent,
-    SidebarComponent
+    SidebarComponent,
+    CategoryListComponent,
+    BrandListComponent,
+    ColorListComponent
   ],
   imports: [
     BrowserModule,

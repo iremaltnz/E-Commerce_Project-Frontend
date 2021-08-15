@@ -2,7 +2,6 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Brand } from '../models/Brand';
-import { Category } from '../models/Category';
 import { ListResponseModel } from '../models/listResponseModel';
 
 @Injectable({
@@ -16,7 +15,7 @@ export class BrandService {
 
   getBrands():Observable<ListResponseModel<Brand>>{
 
-    let newPath=this.apiUrl+"categories/getall";
+    let newPath=this.apiUrl+"brands/list";
     return this.httpClient.get<ListResponseModel<Brand>>(newPath);
   }
 }
