@@ -8,12 +8,17 @@ import { ProductListComponent } from './components/Product/product-list/product-
 import { NaviComponent } from './components/navi/navi.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 
+import { ProductDetailPageComponent } from './components/Product/product-detail-page/product-detail-page.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     ProductListComponent,
     NaviComponent,
-    SidebarComponent
+    SidebarComponent,
+    ProductDetailPageComponent,
+ 
   ],
   imports: [
     BrowserModule,

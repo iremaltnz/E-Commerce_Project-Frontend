@@ -1,20 +1,27 @@
 
 
 
-    <div  *ngFor= "let product of products" class="card" style="width: 18rem; float: left; height: 28rem;margin-right: 10px; margin-bottom: 10px;">
+    <div  *ngFor= "let product of products" class="card" style="width: 18rem; float: left; height: 30rem;margin-right: 10px; margin-bottom: 10px;">
    
   
         <div class="card-body">
-          <img src="https://www.kurumsaleticaretsitesi.com/image/cache/catalog/kurumsal-logo-2-1419x970.png" class="card-img-top" alt="...">
+          <img src="https://www.kurumsaleticaretsitesi.com/image/cache/catalog/kurumsal-logo-2-1419x970.png" class="card-img-top" alt="..." style="height: 55%;">
 
-            <h5 class="card-title"><b style="font-size:larger; ">{{product.product_name}}</b> </h5>
+          <div style="height: 20%;">
+            <h5 routerLink="/product-detail/{{product.product_id}}" class="card-title"><b style="font-size:medium; ">{{product.product_name}}</b> </h5>
             
-            <p class="card-text" style="font-size: x-large; color: red; right: 0;">{{product.product_price}} TL </p>
-      
-             <button type="button" class="btn btn-danger" style="margin-left: 50px; width: 200px; height: 50px; " >Sepete At</button>
+           
+          </div>
+            
+          <p class="card-text" style="font-size: x-large; color: red; right: 0; ">{{product.product_price}} TL </p>
+             <button type="button" class="btn btn-danger" style="margin-left: 50px; width: 200px; height: 40px; " >Sepete At</button>
      
 
       </div>
     </div>
 
-   
+    <div class="container"> 
+    
+      
+    
+  
