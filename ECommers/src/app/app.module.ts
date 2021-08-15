@@ -23,9 +23,9 @@ import { ProductDetailPageComponent } from './components/Product/product-detail-
 
     CategoryListComponent,
     BrandListComponent,
-    ColorListComponent
+    ColorListComponent,
 
-    ProductDetailPageComponent,
+    ProductDetailPageComponent
  
 
   ],
