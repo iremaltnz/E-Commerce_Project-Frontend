@@ -5,7 +5,7 @@
         Kategoriler
     </button>
     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-      <li  *ngFor= "let category of categories" ><a class="dropdown-item" href="#">{{category.category_name}}</a></li>
+      <li  *ngFor= "let category of categories"><a class="dropdown-item" href="#"  routerLink="products/category/{{category.category_id}}">{{category.category_name}}</a></li>
      
     </ul>
   </div>
