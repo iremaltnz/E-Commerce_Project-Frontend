@@ -4,6 +4,7 @@ export interface ProductDetail{
     productName:string;
     brandName:string;
     colorName:string;
+    categoryName:string;
     description:string;
     productPrice:number;
     stockQuantity:number;
