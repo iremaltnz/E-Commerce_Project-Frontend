@@ -1,0 +1,7 @@
+<ul class="list-group" *ngIf="user!=null">
+    <li class="list-group-item list-group-item-danger">Kullanıcı Bilgileri</li>
+    <li class="list-group-item">İsim : {{user.first_name}}</li>
+    <li class="list-group-item">Soyisim : {{user.last_name}}</li>
+    <li class="list-group-item">E-mail : {{user.email}}</li>
+    <li class="list-group-item" *ngIf="password!=null">Şifre : {{password}}</li>
+  </ul>

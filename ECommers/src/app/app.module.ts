@@ -16,6 +16,8 @@ import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
 import { CategoryListComponent } from './components/category/category-list/category-list.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UserComponent } from './components/User/user/user.component';
+import { EditorAddComponent } from './components/Editor/editor-add/editor-add.component';
 
 
 @NgModule({
@@ -33,7 +35,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
     RegisterComponent,
 
-    LoginComponent
+    LoginComponent,
+
+    UserComponent,
+
+    EditorAddComponent
  
 
   ],
