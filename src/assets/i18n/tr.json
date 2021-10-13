@@ -1,0 +1,93 @@
+{
+    "ürün":{
+
+        "adetBilgisi":"Adet ",
+        "sepeteEkle":"Sepete Ekle",
+        "işlem":"Ürün İşlemleri",
+        "isim":"Ürün İsmi",
+        "renk":"Renk",
+        "marka":"Marka",
+        "kategori":"Kategori",
+        "stok":"Stok Adedi",
+        "ekle":"Ekle",
+        "sil":"Sil",
+        "güncelle":"Güncelle",
+        "güncelleBaslik":"Ürünü Güncelle",
+        "ekleBaslik":"Ürün Ekle",
+        "secimRenk":"Renk Seçin",
+        "secimMarka":"Marka Seçin",
+        "secimKategori":"Kategori Seçin",
+        "fiyat":"Ürün Fiyatı",
+        "açıklama":"Açıklama"
+       
+    },
+
+    "renk":{
+        "baslik":"Renkler",
+        "id":"Renk Id"
+    },
+
+    "marka":{
+        "baslik":"Markalar",
+        "id":"Marka Id"
+    },
+    "kategori":{
+        "baslik":"Kategoriler",
+        "id":"Kategori Id"
+    },
+
+    "filtre":{
+
+        "filtre":"Filtrele"
+    },
+    
+    "hesap":{
+        "hesap":"Hesabım",
+        "kullanıcıBilgileri":"Kullanıcı Bilgileri",
+        "isim":"İsim",
+        "soyisim":"Soyisim",
+        "email":"E-Mail",
+        "şifre":"Şifre"
+
+    },
+    "editör":{
+        "işlem":"Editör İşlemleri",
+        "ekle":"Ekle",
+        "baslik":"Editör Ekle",
+        "isim":"İsim",
+        "soyisim":"Soyisim",
+        "email":"E-Mail"
+       
+    },
+
+    "sepet":{
+        "sepetim":"Sepetim",
+        "onayla":"Sepeti Onayla",
+        "total":"Toplam Tutar"
+    },
+
+    "sipariş":{
+        "siparişlerim":"Siparişlerim",
+        "teslim":"Teslim Alan",
+        "durum":"Sipariş Durumu",
+        "tarih":"Sipariş Tarihi",
+        "tutar":"Tutar",
+        "isim":"Ürün İsmi"
+    }
+    ,
+
+    "kullanıcıİşlem":{
+        "baslik":"Giriş Yap / Kaydol",
+        "giriş":"Giriş Yap",
+
+        "kayıt":"Kayıt Ol",
+        "çıkış":"Çıkış Yap"
+    },
+
+    "dil":{
+        "dil":"Dil Seçiniz",
+        "tr":"Türkçe",
+        "en":"İngilizce"
+    }
+ 
+}

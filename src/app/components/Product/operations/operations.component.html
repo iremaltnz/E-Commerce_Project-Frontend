@@ -1,0 +1,127 @@
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">{{'ürün.isim' | translate}}</th>
+        <th scope="col">{{'ürün.renk' | translate}}</th>
+        <th scope="col">{{'ürün.marka' | translate}}</th>
+        <th scope="col">{{'ürün.kategori' | translate}}</th>
+        <th scope="col">{{'ürün.stok' | translate}}</th>
+        <th scope="col">{{'ürün.işlem' | translate}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr  *ngFor= "let product of productDetails | paginate: { itemsPerPage:3 , currentPage: page , totalItems:totalLenght}" >
+       
+        <td>{{product.product_name}}</td>
+        <td>{{product.color_name}}</td>
+        <td>{{product.brand_name}}</td>
+        <td>{{product.category_name}}</td>
+        <td>{{product.stock_quantity}}</td>
+        <td><button type="button" class="btn btn-danger" (click)="delete(product.product_id)"> {{'ürün.sil' | translate}}</button>
+           <button  type="button"  class="btn btn-warning" routerLink="/product-update/product_id/{{product.product_id}}" > {{'ürün.güncelle' | translate}}</button></td>
+      </tr>
+    
+    </tbody>
+  </table>
+
+  <button type="button" style="margin-top: 15px;" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    {{'ürün.ekle' | translate}}
+    </button>
+    <pagination-controls (pageChange)="page = $event"></pagination-controls>
+    
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel"> {{'ürün.ekleBaslik' | translate}}</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <h4> {{'ürün.secimMarka' | translate}}</h4>
+                <select class="form-select" size="3" aria-label="size 3 select example">
+                    <option *ngFor= "let brand of brands" (click)="setBrandId(brand.brand_id)"><a class="dropdown-item" href="#"></a>{{brand.brand_name}}</option>
+                  </select>
+<hr>
+                  <h4> {{'ürün.secimRenk' | translate}}</h4>
+                  <select class="form-select" size="3" aria-label="size 3 select example">
+                    <option *ngFor= "let color of colors" (click)="setColorId(color.color_id)" ><a class="dropdown-item" href="#" ></a>{{color.color_name}}</option>
+                  </select>
+                  <hr>
+                  <h4> {{'ürün.secimKategori' | translate}}</h4>
+                  <select class="form-select" size="3" aria-label="size 3 select example">
+                    <option *ngFor= "let category of categories" (click)="setCategoryId(category.category_id)"><a class="dropdown-item" href="#" ></a>{{category.category_name}}</option>
+                  </select>
+               
+                  <div class="modal-body">
+                
+                    
+
+                    <form [formGroup]="productAddForm">
+                     
+                  
+                        
+                        <div  class="mb-3">
+                            <label for="product_name">{{'ürün.isim' | translate}}</label>
+                        <div class="form-group">
+                            <input type="text"
+                             id="product_name" formControlName="product_name"
+                             class="form-control" placeholder="Ürün İsmi"/>
+                        </div>
+                        </div>
+                    </form>
+                    
+                    <form [formGroup]="productAddForm">
+                        <div class="mb-3">
+                            <label for="product_price">{{'ürün.fiyat' | translate}}</label>
+                        <div class="form-group">
+                            <input type="number"
+                             id="product_price" formControlName="product_price"
+                             class="form-control" placeholder="Ürün Fiyatı "/>
+                        </div>
+                        </div>
+                    </form>
+
+                    <form [formGroup]="productAddForm">
+                          <div class="mb-3">
+                            <label for="stock_quantity">{{'ürün.stok' | translate}}</label>
+                        <div class="form-group">
+                            <input type="number"
+                             id="stock_quantity" formControlName="stock_quantity"
+                             class="form-control" placeholder="Stok Adedi"/>
+                        </div>
+                        </div>
+                    </form>
+
+
+                     <form [formGroup]="productAddForm">
+                        <div class="mb-3">
+                            <label for="description">{{'ürün.açıklama' | translate}}</label>
+                        <div class="form-group">
+                            <input type="text"
+                             id="description" formControlName="description"
+                             class="form-control" placeholder="Açıklama "/>
+                        </div>
+                        </div>
+                
+                      
+                        
+                       
+                      </form>
+
+                      
+  
+  </div>
+               
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                  <button type="button"
+                  class="btn btn-warning" (click)="ProductAdd()">{{'ürün.ekle' | translate}}</button>
+                </div>
+          </div>
+        </div>
+    </div>
+
+
+    
+    

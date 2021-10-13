@@ -1,0 +1,44 @@
+
+
+
+<select class="form-select" aria-label="Default select example" style="width: 300px;" [(ngModel)]="filter">
+  <option selected> Önerilen Sıralama</option>
+  
+  <option ><a class="dropdown-item" href="#" ></a>upper</option>
+  <option >lower</option>
+
+ 
+</select>
+<br><br>
+ 
+<Button routerLink="/products/filter/{{filter}}" type="button" class="btn btn-danger" >{{'filtre.filtre' | translate}}</Button>
+
+<br><br><br>
+
+    <div  *ngFor= "let product of products | paginate: { itemsPerPage:3 , currentPage: page , totalItems:totalLenght}" class="card" style="width: 18rem; float: left; height: 40rem;margin-right: 10px; margin-bottom: 10px;">
+   
+  
+        <div class="card-body">
+          <img  routerLink="/product-detail/{{product.product_id}}" src="https://www.kurumsaleticaretsitesi.com/image/cache/catalog/kurumsal-logo-2-1419x970.png" class="card-img-top" alt="..." style="height: 35%;">
+
+          <div style="height: 20%;">
+            <h5 routerLink="/product-detail/{{product.product_id}}" class="card-title"><b style="font-size:medium; ">{{product.product_name}}</b> </h5>
+            
+           
+          </div>
+            
+          <p class="card-text" style="font-size: x-large; color: red; right: 0; ">{{product.product_price}} TL </p>
+<br>
+<p>{{'ürün.adetBilgisi'| translate}}</p>
+          <input type="number" class="form-control" (keyup)="setNumberOfProduct($event)">
+          <br><br>
+             <button type="button" class="btn btn-danger"   (click)="addCart(product.product_id,product.product_price)" style="margin-left: 50px; width: 200px; height: 40px; " >{{'ürün.sepeteEkle'| translate}}</button>
+     
+
+      </div>
+
+   
+    </div>
+    <pagination-controls (pageChange)="page = $event" ></pagination-controls>
+
+   

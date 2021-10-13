@@ -1,0 +1,92 @@
+{
+   
+    "ürün":{
+
+        "adetBilgisi":"Number ",
+        "sepeteEkle":"Add to Shopping Cart",
+        "işlem":"Product Operations",
+        "isim":"Product Name",
+        "renk":"Color",
+        "marka":"Brand",
+        "kategori":"Category",
+        "stok":"Stock Quantity",
+        "ekle":"Add",
+        "sil":"Delete",
+        "güncelle":"Update",
+        "güncelleBaslik":"Update Product ",
+        "ekleBaslik":"Add Product",
+        "secimRenk":"Choose Color",
+        "secimMarka":"Choose Brand ",
+        "secimKategori":"Choose Category ",
+        "fiyat":"Product Price",
+        "açıklama":"Description"
+       
+    },
+
+    "renk":{
+        "baslik":"Colors",
+        "id":"Color Id"
+    },
+
+    "marka":{
+        "baslik":"Brands",
+        "id":"Brand Id"
+    },
+    "kategori":{
+        "baslik":"Categories",
+        "id":"Category Id"
+    },
+
+    "filtre":{
+
+        "filtre":"Filter"
+    },
+
+    "hesap":{
+        "hesap":"Account",
+        "kullanıcıBilgileri":"User Profil",
+        "isim":"Name",
+        "soyisim":"LastName",
+        "email":"E-Mail",
+        "şifre":"Password"
+    },
+
+    "editör":{
+        "işlem":"Editör Operations",
+        "ekle":"Add",
+        "baslik":"Add Editör",
+        "isim":"Name",
+        "soyisim":"Last Name",
+        "email":"E-Mail"
+       
+    },
+
+    "sepet":{
+        "sepetim":"My Shopping Cart",
+        "onayla":"Confirm Cart",
+        "total":"Total Price"
+    },
+
+    "sipariş":{
+        "siparişlerim":"My Orders",
+        "teslim":"Receiver",
+        "durum":"Order Status",
+        "tarih":"Order Date",
+        "tutar":"Price",
+        "isim":"Product Name"
+    },
+
+    "kullanıcıİşlem":{
+        "baslik":"Login/ Regiser",
+        "giriş":"Login",
+
+        "kayıt":"Register",
+        "çıkış":"Log Out"
+    },
+
+    "dil":{
+        "dil":"Choose Language",
+        "tr":"Turkish",
+        "en":"English"
+    }
+}

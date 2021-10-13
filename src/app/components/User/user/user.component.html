@@ -1,0 +1,7 @@
+<ul class="list-group" *ngIf="user!=null">
+    <li class="list-group-item list-group-item-danger">{{'hesap.kullanıcıBilgileri' | translate}}</li>
+    <li class="list-group-item">{{'hesap.isim' | translate}} : {{user.first_name}}</li>
+    <li class="list-group-item">{{'hesap.soyisim' | translate}} : {{user.last_name}}</li>
+    <li class="list-group-item">{{'hesap.email' | translate}} : {{user.email}}</li>
+    <li class="list-group-item" *ngIf="password!=null">{{'hesap.şifre' | translate}} : {{password}}</li>
+  </ul>

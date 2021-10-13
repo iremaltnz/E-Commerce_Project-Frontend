@@ -1,0 +1,47 @@
+<body class="text-center">
+    <main class="form-login" >
+      <form [formGroup]="registerForm">
+        <h1 class="h3 mb-3 fw-normal">{{'editör.baslik' | translate}}</h1>
+  
+        
+        <div class="form-floating">
+            <input
+              formControlName="first_name"
+              type="text"
+              class="form-control"
+              id="first_name"
+              placeholder="First Name"
+            />
+            <label for="floatingInput">{{'editör.isim' | translate}}</label>
+          </div>
+          
+        <div class="form-floating">
+            <input
+              formControlName="last_name"
+              type="text"
+              class="form-control"
+              id="last_name"
+              placeholder="Last Name"
+            />
+            <label for="floatingInput">{{'editör.soyisim' | translate}}</label>
+          </div>
+
+        <div class="form-floating">
+          <input
+            formControlName="email"
+            type="email"
+            class="form-control"
+            id="floatingInput"
+            placeholder="name@example.com"
+          />
+          <label for="floatingInput">{{'editör.email' | translate}}</label>
+        </div>
+
+      
+        <button class="w-100 btn btn-lg btn-primary" (click)="register()">
+          {{'editör.ekle' | translate}}
+        </button>
+       
+      </form>
+    </main>
+  </body>

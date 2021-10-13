@@ -1,0 +1,102 @@
+
+         <div class="content">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-header">
+                  <h5 class="title">{{'ürün.güncelleBaslik' | translate}}</h5>
+                  <div class="card-body">     
+                  
+
+                  <form [formGroup]="productUpdateForm">
+                   
+                
+                      
+                      <div  class="mb-3">
+                          <label for="product_name">{{'ürün.isim' | translate}}</label>
+                      <div class="form-group" >
+                          <input type="text" 
+                           id="product_name" formControlName="product_name"  placeholder="{{'ürün.isim' | translate}} " value="{{product.product_name}}"
+                           class="form-control"  
+                       />
+                      </div>
+                      </div>
+                 
+                  
+                
+                      <div class="mb-3">
+                          <label for="product_price">{{'ürün.açıklama' | translate}}</label>
+                      <div class="form-group">
+                          <input type="number"
+                           id="product_price" formControlName="product_price" value="{{product.product_price}}"
+                           class="form-control" placeholder="{{'ürün.açıklama' | translate}} "/> 
+                      </div>
+                      </div>
+               
+
+                
+                        <div class="mb-3">
+                          <label for="stock_quantity">{{'ürün.stok' | translate}}</label>
+                      <div class="form-group">
+                          <input type="number"
+                           id="stock_quantity" formControlName="stock_quantity" value="{{product.stock_quantity}}"
+                           class="form-control" placeholder="{{'ürün.stok' | translate}}"/>
+                      </div>
+                      </div>
+                
+
+                   <div class="mb-3">
+                     <label for="stock_quantity">{{'renk.id' | translate}}</label>
+                 <div class="form-group">
+                     <input type="number"
+                      id="color_id" formControlName="color_id" value="{{product.color_id}}"
+                      class="form-control" placeholder="{{'renk.id' | translate}}"/>
+                 </div>
+                 </div>
+         
+
+          
+               <div class="mb-3">
+                 <label for="stock_quantity">{{'marka.id' | translate}}</label>
+             <div class="form-group">
+                 <input type="number"
+                  id="brand_id" formControlName="brand_id" value="{{product.brand_id}}"
+                  class="form-control" placeholder=" {{'marka.id' | translate}}"/>
+             </div>
+             </div>
+     
+
+        
+           <div class="mb-3">
+             <label for="stock_quantity">{{'kategori.id' | translate}}</label>
+         <div class="form-group">
+             <input type="number"
+              id="category_id" formControlName="category_id" value="{{product.category_id}}"
+              class="form-control" placeholder="{{'kategori.id' | translate}}d "/>
+         </div>
+         </div>
+    
+
+
+                 
+                      <div class="mb-3">
+                          <label for="description">{{'ürün.açıklama' | translate}}</label>
+                      <div class="form-group">
+                          <input type="text"
+                           id="description" formControlName="description" value="{{product.description}}"
+                           class="form-control" placeholder="{{'ürün.açıklama' | translate}} "/>
+                      </div>
+                      </div>
+              
+                    
+                      
+                     
+                    </form>
+
+                    
+
+                </div>
+                <div class="card-footer">
+                
+                 
+                 <button class="btn btn-fill btn-primary" (click)="update()" >{{'ürün.güncelle' | translate}}</button>
+               </div>

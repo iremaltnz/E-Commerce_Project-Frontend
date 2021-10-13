@@ -1,0 +1,24 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">{{'sipariş.isim' | translate}}</th>
+        <th scope="col">{{'sipariş.teslim' | translate}}</th>
+        <th scope="col">{{'sipariş.durum' | translate}}</th>
+        <th scope="col">{{'sipariş.tarih' | translate}}</th>
+        <th scope="col">{{'sipariş.tutar' | translate}} </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor=" let order of orders">
+        <td>  <img src="https://www.kurumsaleticaretsitesi.com/image/cache/catalog/kurumsal-logo-2-1419x970.png"  alt="..." width="100px" height="100px" ></td>
+        <td>{{order.product_name}}</td>
+        <td>{{order.receiver}}</td>
+        <td>{{order.order_status}}</td>
+        <td>{{order.date}}</td>
+        <td>{{order.total_price}}TL</td>
+      
+      </tr>
+     
+    </tbody>
+  </table>

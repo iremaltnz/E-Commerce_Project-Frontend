@@ -1,0 +1,38 @@
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-7">
+            <img src="https://www.kurumsaleticaretsitesi.com/image/cache/catalog/kurumsal-logo-2-1419x970.png"  alt="..." width="500px" height="500px" >
+        </div>
+        <div class="col-md-5" >
+           <div *ngIf="productDetail!=null">
+             
+            
+                <h2 style=" margin-bottom: 20px;">{{productDetail.product_name}}</h2>
+             
+                
+                <h1 style="color: brown; font-size: xx-large; margin-left: 200px; "> {{productDetail.product_price}} TL</h1>
+
+                <hr>
+                  <h4>Marka: {{productDetail.brand_name}}</h4>
+                  <h4>Renk: {{productDetail.color_name}}</h4>
+                  <h4>Açıklama: {{productDetail.description}}</h4>
+            
+                  <hr style="margin-top: 50px;">
+                  <h4>Adet Bilgisi</h4>
+                  <div class="input-group mb-3">
+                  
+                      
+                    <span class="input-group-text">+</span>
+                    <input type="text" class="form-control" (keyup)="setNumberOfProduct($event)">
+                 
+                  </div>
+
+              <button type="button" class="btn btn-danger" style="margin-left: 50px; width: 200px; height: 40px;  margin-top: 20px;"
+              (click)="addCart(productDetail.product_id,productDetail.product_price)" >Sepete At</button>
+           </div>
+        </div>
+</div>
+</div>
+
